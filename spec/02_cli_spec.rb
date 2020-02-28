@@ -7,8 +7,8 @@ describe './bin/greet executing a CLI Application' do
 
     expect($stdout).to receive(:puts).with("Hi! I'm HAL, what's your name?"), "Make sure bin/greet has code that can output 'Hi! I'm HAL, what's your name?' exactly."
 
+end
     run_file("./bin/greet")
-  end
 
   it 'uses #gets.strip to capture the user input and set it equal to a variable called name' do 
     allow($stdout).to receive(:puts)
